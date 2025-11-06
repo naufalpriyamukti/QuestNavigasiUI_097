@@ -6,6 +6,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
+import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
+
 
 
 enum class Navigasi {
@@ -42,4 +45,11 @@ fun DataApp(
             }
         }
     }
+}
+
+private fun  cancelAndBackToFormulirku(
+    navController: NavHostController
+){
+    navController.popBackStack(Navigasi.Formulirku,
+        inclusive = false)
 }
