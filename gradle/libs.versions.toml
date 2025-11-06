@@ -12,6 +12,7 @@ navigation = "2.9.5"
 ui = "1.9.4"
 navigationRuntimeKtx = "2.9.5"
 navigationCompose = "2.9.5"
+uiGraphics = "1.9.4"
 
 
 [libraries]
@@ -33,6 +34,7 @@ androidx-navigation-compose = { module = "android.navigation:navigation-compose"
 androidx-ui = { group = "androidx.compose.ui", name = "ui", version.ref = "ui" }
 androidx-navigation-runtime-ktx = { group = "androidx.navigation", name = "navigation-runtime-ktx", version.ref = "navigationRuntimeKtx" }
 navigation-compose = { group = "androidx.navigation", name = "navigation-compose", version.ref = "navigationCompose" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics", version.ref = "uiGraphics" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
