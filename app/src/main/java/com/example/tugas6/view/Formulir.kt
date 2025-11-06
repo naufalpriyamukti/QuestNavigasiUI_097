@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.TopAppBarDefaults
@@ -37,7 +38,16 @@ fun FormIsian(
     ){
         Column (modifier = Modifier.padding(isiRuang),
             verticalArrangement = Arrangement.Top,
-            horizontalAlignment = Alignment.CenterHorizontally){  }
+            horizontalAlignment = Alignment.CenterHorizontally)
+        {
+            OutlinedTextField(
+                value = " ",
+                singleLine = true,
+                modifier = Modifier
+                    .padding(top = 20.dp)
+                    .width()
+            )
+        }
     }
 }
 
